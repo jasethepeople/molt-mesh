@@ -1,0 +1,358 @@
+{
+  "kind": "molt-show/chronicle",
+  "mesh_id": "byzantium-swarm",
+  "protocol_version": 2,
+  "started_ts": 1794767389.7091594,
+  "sealed_ts": 1794767498.1159787,
+  "genesis_anchor_hash": "ea98e45a03e50c60b454598ca38b370a0e13a72dbc7a78a7179eff232c70da6d",
+  "genesis_validators": [
+    "alpha",
+    "beta",
+    "delta",
+    "epsilon",
+    "gamma",
+    "zeta"
+  ],
+  "final_state_root": "6bb05fa673a3a402da9be2e3e9fbdc604e0ca156cbede18e39105f4033736bb6",
+  "nodes": [
+    {
+      "node": "alpha",
+      "node_id": "node:alpha@bd258d03c98e4bf3",
+      "url": "http://127.0.0.1:15100",
+      "envelopes": 101,
+      "credits": {
+        "alpha": 206,
+        "beta": 205,
+        "gamma": 204,
+        "delta": 305,
+        "epsilon": 0,
+        "zeta": 0
+      },
+      "stake": {},
+      "checkpoints": 5,
+      "divergences_healed": 0
+    },
+    {
+      "node": "beta",
+      "node_id": "node:beta@2af640ade6dcb36e",
+      "url": "http://127.0.0.1:15101",
+      "envelopes": 101,
+      "credits": {
+        "alpha": 206,
+        "beta": 205,
+        "gamma": 204,
+        "delta": 305,
+        "epsilon": 0,
+        "zeta": 0
+      },
+      "stake": {},
+      "checkpoints": 5,
+      "divergences_healed": 0
+    },
+    {
+      "node": "delta",
+      "node_id": "node:delta@862ef0a9898d0594",
+      "url": "http://127.0.0.1:15103",
+      "envelopes": 46,
+      "credits": {
+        "alpha": 147,
+        "beta": 146,
+        "gamma": 146,
+        "delta": 133,
+        "epsilon": 10,
+        "zeta": 10
+      },
+      "stake": {},
+      "checkpoints": 1,
+      "divergences_healed": 0
+    },
+    {
+      "node": "epsilon",
+      "node_id": "node:epsilon@fc62384b69f32639",
+      "url": "http://127.0.0.1:15104",
+      "envelopes": 97,
+      "credits": {
+        "alpha": 206,
+        "beta": 205,
+        "gamma": 204,
+        "delta": 305,
+        "epsilon": 0,
+        "zeta": 0
+      },
+      "stake": {},
+      "checkpoints": 5,
+      "divergences_healed": 2
+    },
+    {
+      "node": "gamma",
+      "node_id": "node:gamma@110b2cbe20dfa841",
+      "url": "http://127.0.0.1:15102",
+      "envelopes": 101,
+      "credits": {
+        "alpha": 206,
+        "beta": 205,
+        "gamma": 204,
+        "delta": 305,
+        "epsilon": 0,
+        "zeta": 0
+      },
+      "stake": {},
+      "checkpoints": 5,
+      "divergences_healed": 0
+    },
+    {
+      "node": "zeta",
+      "node_id": "node:zeta@6a9667fc9075f15a",
+      "url": "http://127.0.0.1:15105",
+      "envelopes": 99,
+      "credits": {
+        "alpha": 206,
+        "beta": 205,
+        "gamma": 204,
+        "delta": 305,
+        "epsilon": 0,
+        "zeta": 0
+      },
+      "stake": {},
+      "checkpoints": 5,
+      "divergences_healed": 2
+    }
+  ],
+  "attacks": [
+    {
+      "round": 4,
+      "attack": "replay (epoch-replay)",
+      "count": 9,
+      "deliveries": [
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "attack": "causal-monotonicity-violation",
+      "seq": 4,
+      "verdict": "reject",
+      "why": "causal-violation"
+    },
+    {
+      "round": 6,
+      "attack": "equivocation",
+      "seq": 5,
+      "envelopes": {
+        "A": {
+          "mesh_id": "byzantium-swarm",
+          "epoch": 1,
+          "protocol": 1,
+          "author": "epsilon",
+          "seq": 5,
+          "vc": {
+            "zeta": 4,
+            "beta": 4,
+            "alpha": 4,
+            "gamma": 4,
+            "epsilon": 5
+          },
+          "type": "mesh.event",
+          "payload": {
+            "kind": "trade.offer",
+            "tag": "double-spend",
+            "offer": "SELL 100 CR for 10 MSH",
+            "to": "alpha"
+          },
+          "pub": "4d7585f95cd99b752676148f011471fa6fade19b2441ee39af695086673031bb",
+          "sig": "17b2aaaeb31d2c0d1c976f5cd894e9c9175636e7dc454de0d889f8d4c24d19cc294000e346d8b73776fcf1fb47a705b449b6848282867c6e7420c5c9d745690f"
+        },
+        "B": {
+          "mesh_id": "byzantium-swarm",
+          "epoch": 1,
+          "protocol": 1,
+          "author": "epsilon",
+          "seq": 5,
+          "vc": {
+            "zeta": 4,
+            "beta": 4,
+            "alpha": 4,
+            "gamma": 4,
+            "epsilon": 5
+          },
+          "type": "mesh.event",
+          "payload": {
+            "kind": "trade.offer",
+            "tag": "double-spend",
+            "offer": "SELL 100 CR for 1 MSH",
+            "to": "beta"
+          },
+          "pub": "4d7585f95cd99b752676148f011471fa6fade19b2441ee39af695086673031bb",
+          "sig": "848b898f6173820ee9f099ef43a001977e355ce2f262d654927729ea76bf989d95738d229bc3e9d8afbea6303388239494d1e57d41625a747e51c36bd58ae501"
+        }
+      },
+      "deliveries": {
+        "A": {
+          "url": "http://127.0.0.1:15100",
+          "verdict": "accept",
+          "why": null
+        },
+        "B": {
+          "url": "http://127.0.0.1:15101",
+          "verdict": "accept",
+          "why": null
+        }
+      },
+      "claim": "two valid signatures by the same key over conflicting bodies at the same sequence \u2014 mathematical proof of Byzantine behavior, held the moment any two peers compare notes"
+    },
+    {
+      "round": 8,
+      "attack": "fabricated-checkpoint-proposals",
+      "deliveries": [
+        {
+          "url": "http://127.0.0.1:15100",
+          "seq": 6,
+          "verdict": "accept",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "seq": 6,
+          "verdict": "accept",
+          "why": null
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "attack": "withholding",
+      "applied": true,
+      "on": true,
+      "claim": "epsilon becomes a gossip sink \u2014 it can no longer be a relay, only a dead end"
+    }
+  ],
+  "upgrades": [
+    {
+      "proposal_seq": 12,
+      "fork_round": 20,
+      "adopted": [
+        "alpha",
+        "beta",
+        "gamma",
+        "epsilon",
+        "zeta"
+      ],
+      "forked_off": [
+        "delta"
+      ],
+      "versions": {
+        "alpha": 2,
+        "beta": 2,
+        "gamma": 2,
+        "epsilon": 2,
+        "zeta": 2,
+        "delta": 1
+      }
+    }
+  ],
+  "byzantine_nodes_slashed": [
+    "epsilon",
+    "zeta"
+  ],
+  "converged": true,
+  "forked_off": [
+    "delta"
+  ],
+  "majority": [
+    "alpha",
+    "beta",
+    "gamma"
+  ],
+  "late_joiners": [
+    {
+      "node": "delta",
+      "round": 12,
+      "fetched": 27,
+      "verify_ok": true
+    }
+  ],
+  "crash_recoveries": [
+    {
+      "node": "gamma",
+      "crash_round": 27,
+      "envs_before": 81,
+      "root_before": "3be4a1a96de8ea151bcd058fa244167d0e83884c05fb54a6ea6adbbc1f4ca802",
+      "respawned": true,
+      "state_identical": true,
+      "replayed": 115
+    }
+  ],
+  "replay_proved": true,
+  "sig": "1b468daf3ddf184609bb27927f83715c5029299cd3ee087cffc8d2f00aceda59e0df4d556bf18da55f108932981d22ecd6090309ba180e839db10325507a2d02"
+}

@@ -1,0 +1,201 @@
+{
+  "kind": "molt-anchor/genesis",
+  "mesh_id": "byzantium-swarm",
+  "protocol_version": 1,
+  "validators": {
+    "alpha": {
+      "pub": "5443f1d4afbc91f4723236605904d61795c1d4a63ce765a9275f72eae55354b2",
+      "stake": 100
+    },
+    "beta": {
+      "pub": "968434b3a4e08aa0c783bba64d249541b6a0a5e38a1bef6d75190c0b36961388",
+      "stake": 100
+    },
+    "gamma": {
+      "pub": "0a83e4cd53b38d703b2a9c4c314628ba1e31769de8491590c35c019eaf6cb079",
+      "stake": 100
+    },
+    "delta": {
+      "pub": "6edcaa359182c1d60f317714781454060cfcb92b2be78aaacd6baf4075f79e17",
+      "stake": 100
+    },
+    "epsilon": {
+      "pub": "4d7585f95cd99b752676148f011471fa6fade19b2441ee39af695086673031bb",
+      "stake": 100
+    },
+    "zeta": {
+      "pub": "d5a755d1c3bb01fcf0908740c0d32f900ae1abac042988afd5696ed3364e51e9",
+      "stake": 100
+    }
+  },
+  "genesis_hash": "5443f1d4afbc91f4",
+  "created_ts": 1794767389.7114198,
+  "bootstrap": "node:bootstrap@8c5d3c70a351cffb",
+  "audit_trail": [
+    {
+      "n": 0,
+      "ts": 1794767389.9397464,
+      "kind": "checkpoint.accepted",
+      "detail": {
+        "round": 4,
+        "root": "c431051db1788cab541e880e48edc8b9e8f0096d30fbe63e8d677e426608970b",
+        "signers": [
+          "alpha",
+          "beta",
+          "epsilon",
+          "gamma",
+          "zeta"
+        ]
+      },
+      "prev": "ea98e45a03e50c60b454598ca38b370a0e13a72dbc7a78a7179eff232c70da6d",
+      "hash": "b174fa1c698972c9172d28e04e82d70fd7721c1d7325a369af7da43680ee9d10",
+      "sig": "ae06d0430b5f64ea6388101156e0f65006653f25de11b5303f5e27ff82ed428238ad2a43d56f9a1a32e47a41712f95e1214dc2b3889ead895de22efc085baa0b",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 1,
+      "ts": 1794767404.9903014,
+      "kind": "validator.slashed",
+      "detail": {
+        "who": "epsilon",
+        "burned": 100,
+        "evidence_seq": 5,
+        "round": 6,
+        "by": "alpha"
+      },
+      "prev": "b174fa1c698972c9172d28e04e82d70fd7721c1d7325a369af7da43680ee9d10",
+      "hash": "3010f7b80816e5e682425578e7d6e098bcd59f154a3c25939fbcdbff5595d9de",
+      "sig": "cc206280bc8d50f95a96600b7efe15ac9a023cc9989375a6cb0fb98975caf911a539f205b9109715cafccac032f14124d82b39bc5779912517991ece89dc7201",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 2,
+      "ts": 1794767404.9904335,
+      "kind": "validator.ejected",
+      "detail": {
+        "who": "epsilon",
+        "round": 6
+      },
+      "prev": "3010f7b80816e5e682425578e7d6e098bcd59f154a3c25939fbcdbff5595d9de",
+      "hash": "dc49c8956a814948f7366f2540f6a0dc31c5940fac7dc718e9b8046775c140a7",
+      "sig": "de8b7c9be7e962f6323baefb437de2cbe49e0c0db0783fe64c1bcd616856d70b845618306b361769f8af1a04f396bfe1e997d65a6f4b34b2533283155ec29101",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 3,
+      "ts": 1794767465.056372,
+      "kind": "validator.slashed",
+      "detail": {
+        "who": "zeta",
+        "burned": 100,
+        "evidence_seq": 6,
+        "round": 8,
+        "by": "alpha"
+      },
+      "prev": "dc49c8956a814948f7366f2540f6a0dc31c5940fac7dc718e9b8046775c140a7",
+      "hash": "7ed8e5072edf6c2bb3aaf6245aa5573c2d3f8daef9c89b4dd7274fe73b984223",
+      "sig": "9d6783a22467310806b58f8dc0cd5f6d84e89b4a3f3fe1d998769dd4a8015e13b57808b4eb432d7e52597c51c36976b10f86fb55caf2313a007484a6263a6d01",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 4,
+      "ts": 1794767465.0565104,
+      "kind": "validator.ejected",
+      "detail": {
+        "who": "zeta",
+        "round": 8
+      },
+      "prev": "7ed8e5072edf6c2bb3aaf6245aa5573c2d3f8daef9c89b4dd7274fe73b984223",
+      "hash": "25131f7fe874f8bb76d40622d3e8a2e4b74325095a192ff07be9eb54bc65b918",
+      "sig": "83e7943ad01bfeccc021fb898465bbf7ae0d0ed71373d1a3edf2bf6d9fd6e26832e6590a5973782af6c78d779b6e323658175505f6b733ea6a523a7a1e111c09",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 5,
+      "ts": 1794767495.126177,
+      "kind": "checkpoint.accepted",
+      "detail": {
+        "round": 8,
+        "root": "bbb2cb8ec4e428333b3124ba5cefbe1d7afcebfe01bfb6a573af56b44e0d97e4",
+        "signers": [
+          "alpha",
+          "beta",
+          "gamma"
+        ]
+      },
+      "prev": "25131f7fe874f8bb76d40622d3e8a2e4b74325095a192ff07be9eb54bc65b918",
+      "hash": "0453e0934cbbf747142e1501a4be54ced879c33bb61d970bfd9b8c2ba9ac3d7b",
+      "sig": "260a520afb9cb064469563c340a71528a4cc0aa9e0d1edda8defb568b412dfbef17cc51448cfe21ab1a6995164274af5adc87096e0f2530170c9cd0436e5ff0a",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 6,
+      "ts": 1794767495.3611438,
+      "kind": "checkpoint.accepted",
+      "detail": {
+        "round": 12,
+        "root": "bbb2cb8ec4e428333b3124ba5cefbe1d7afcebfe01bfb6a573af56b44e0d97e4",
+        "signers": [
+          "alpha",
+          "beta",
+          "delta",
+          "gamma"
+        ]
+      },
+      "prev": "0453e0934cbbf747142e1501a4be54ced879c33bb61d970bfd9b8c2ba9ac3d7b",
+      "hash": "2283921d4810467fa9e4fb3174a01d58819e1f6587db108e5b6b5bc13ff97d54",
+      "sig": "84558ea890656d88c992bfbf1f2aecdc25815107a5967aece6998d215122afb1e8c6633b24b2a3d0c7ba008bdc7720b1d864e102ee39995e076083205e176804",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 7,
+      "ts": 1794767495.6309018,
+      "kind": "protocol.upgraded",
+      "detail": {
+        "version": 2
+      },
+      "prev": "2283921d4810467fa9e4fb3174a01d58819e1f6587db108e5b6b5bc13ff97d54",
+      "hash": "4d2c1b35729e32b696373a9de8ab7240777b0b1666cc1ad531dc898ae577a46f",
+      "sig": "2fc04bdeb44351dba962d3af563da371a1023ff56436153c08fd71b6cb105882c1f603e833464e167d9bf1c6f7758555ce3040cc904f56bc24c827bb8da1b90d",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 8,
+      "ts": 1794767495.7660644,
+      "kind": "checkpoint.accepted",
+      "detail": {
+        "round": 20,
+        "root": "38cadbec226525cf68ba2b826c9d521bbe84007714845db19d5f8404028c8c99",
+        "signers": [
+          "alpha",
+          "beta",
+          "gamma"
+        ]
+      },
+      "prev": "4d2c1b35729e32b696373a9de8ab7240777b0b1666cc1ad531dc898ae577a46f",
+      "hash": "3f8d9a09052cee651113f53e749983afc5d9ea95a15f9f6c785e6c30ebad4340",
+      "sig": "e0381330cd64fc4dc7e7ee2c9c29abbbba2d9af2943118caf6663a4a8e3f13b95b902d2d0e53945231f0fb9b907cd8ac618afe4ec269fc24a9ff95553f892c09",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    },
+    {
+      "n": 9,
+      "ts": 1794767497.8030875,
+      "kind": "checkpoint.accepted",
+      "detail": {
+        "round": 32,
+        "root": "6bb05fa673a3a402da9be2e3e9fbdc604e0ca156cbede18e39105f4033736bb6",
+        "signers": [
+          "alpha",
+          "beta",
+          "gamma"
+        ]
+      },
+      "prev": "3f8d9a09052cee651113f53e749983afc5d9ea95a15f9f6c785e6c30ebad4340",
+      "hash": "f5099c3ae6dfd5848f145726b90bb4b7035aee7be0ba547ed801cc3174044125",
+      "sig": "9cdc3b9fc2a54426017fea7cf1e11ae522fa29245384a3fd8835cc1c0857aefcdb1ba7a29fe5cd5e4f18c2673ae79ea12fd2dfe8c04429ca464479e1d0edaa0d",
+      "signer": "node:alpha@bd258d03c98e4bf3"
+    }
+  ],
+  "hash": "ea98e45a03e50c60b454598ca38b370a0e13a72dbc7a78a7179eff232c70da6d",
+  "sig": "a010c388a96337116dceaedacaec64a437af7da54865b3e25b31309673e7ac327a4e99fa4bb95f4d576b4501a81ddfcde923e5578c3c7cd767cfb78e9ea20d09"
+}

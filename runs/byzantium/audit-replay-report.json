@@ -1,0 +1,270 @@
+{
+  "kind": "molt-audit/adversarial-replay",
+  "mesh_id": "byzantium-swarm",
+  "generated_ts": 1794767497.9522188,
+  "genesis_anchor_hash": "ea98e45a03e50c60b454598ca38b370a0e13a72dbc7a78a7179eff232c70da6d",
+  "genesis_validators": [
+    "alpha",
+    "beta",
+    "delta",
+    "epsilon",
+    "gamma",
+    "zeta"
+  ],
+  "protocol_version_final": 2,
+  "converged": true,
+  "majority_state_root": "6bb05fa673a3a402da9be2e3e9fbdc604e0ca156cbede18e39105f4033736bb6",
+  "fork": {
+    "round": 20,
+    "majority": [
+      "alpha",
+      "beta",
+      "epsilon",
+      "gamma",
+      "zeta"
+    ],
+    "forked_off": [
+      "delta"
+    ],
+    "majority_converged": true,
+    "dissent_diverged": true
+  },
+  "byzantine_attacks": [
+    {
+      "round": 4,
+      "attack": "replay (epoch-replay)",
+      "count": 9,
+      "deliveries": [
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15100",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 0,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 1,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15102",
+          "author": "epsilon",
+          "seq": 2,
+          "epoch": 1,
+          "verdict": "duplicate",
+          "why": null
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "attack": "causal-monotonicity-violation",
+      "seq": 4,
+      "verdict": "reject",
+      "why": "causal-violation"
+    },
+    {
+      "round": 6,
+      "attack": "equivocation",
+      "seq": 5,
+      "deliveries": {
+        "A": {
+          "url": "http://127.0.0.1:15100",
+          "verdict": "accept",
+          "why": null
+        },
+        "B": {
+          "url": "http://127.0.0.1:15101",
+          "verdict": "accept",
+          "why": null
+        }
+      },
+      "claim": "two valid signatures by the same key over conflicting bodies at the same sequence \u2014 mathematical proof of Byzantine behavior, held the moment any two peers compare notes"
+    },
+    {
+      "round": 8,
+      "attack": "fabricated-checkpoint-proposals",
+      "deliveries": [
+        {
+          "url": "http://127.0.0.1:15100",
+          "seq": 6,
+          "verdict": "accept",
+          "why": null
+        },
+        {
+          "url": "http://127.0.0.1:15101",
+          "seq": 6,
+          "verdict": "accept",
+          "why": null
+        }
+      ]
+    },
+    {
+      "round": 10,
+      "attack": "withholding",
+      "applied": true,
+      "on": true,
+      "claim": "epsilon becomes a gossip sink \u2014 it can no longer be a relay, only a dead end"
+    }
+  ],
+  "byzantine_isolated": true,
+  "isolated_after_round": 5,
+  "ejected_after_round": 0,
+  "valid_events_lost": [],
+  "no_valid_event_lost": true,
+  "attacks_survived": [
+    "causal-monotonicity-violation",
+    "equivocation",
+    "fabricated-checkpoint-proposals",
+    "replay (epoch-replay)",
+    "withholding"
+  ],
+  "nodes_audited": {
+    "alpha": {
+      "node": "alpha",
+      "envelopes": 101,
+      "findings": [],
+      "verdict": "clean"
+    },
+    "beta": {
+      "node": "beta",
+      "envelopes": 101,
+      "findings": [],
+      "verdict": "clean"
+    },
+    "gamma": {
+      "node": "gamma",
+      "envelopes": 101,
+      "findings": [],
+      "verdict": "clean"
+    },
+    "epsilon": {
+      "node": "epsilon",
+      "envelopes": 97,
+      "findings": [],
+      "verdict": "clean"
+    },
+    "zeta": {
+      "node": "zeta",
+      "envelopes": 99,
+      "findings": [],
+      "verdict": "clean"
+    },
+    "delta": {
+      "node": "delta",
+      "envelopes": 46,
+      "findings": [],
+      "verdict": "clean"
+    }
+  },
+  "late_joiners": [
+    {
+      "node": "delta",
+      "round": 12,
+      "fetched": 27,
+      "verify_ok": true
+    }
+  ],
+  "crash_recoveries": [
+    {
+      "node": "gamma",
+      "crash_round": 27,
+      "envs_before": 81,
+      "root_before": "3be4a1a96de8ea151bcd058fa244167d0e83884c05fb54a6ea6adbbc1f4ca802",
+      "respawned": true,
+      "state_identical": true,
+      "replayed": 115
+    }
+  ],
+  "deterministic_replay": {
+    "kind": "molt-audit/deterministic-replay",
+    "per_node": {
+      "alpha": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 101
+      },
+      "beta": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 101
+      },
+      "gamma": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 101
+      },
+      "epsilon": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 97
+      },
+      "zeta": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 99
+      },
+      "delta": {
+        "ok": true,
+        "diffs": [],
+        "replayed_envelopes": 46
+      }
+    },
+    "deterministic": true
+  },
+  "replayable": true,
+  "verdict": "PASS \u2014 converged, Byzantine node isolated and slashed, no valid event lost, all nodes audit clean"
+}
